@@ -1,0 +1,637 @@
+@font-face {
+  font-family: "SF-Pro-Display";
+  src: url("fonts/SFPRODISPLAYMEDIUM.OTF") format("opentype");
+}
+@font-face {
+  font-family: "Playfair-Display";
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+}
+@font-face {
+  font-family: "Monotype-Corsiva";
+  src: url("fonts/MonotypeCorsiva.ttf") format("opentype");
+}
+body {
+  background: linear-gradient(90deg, #F9F9F9 -1.47%, #FFF 103.39%);
+  /* background-color: red; */
+}
+
+.up {
+  bottom: 8rem;
+  left: 6rem;
+}
+.up .arrow {
+  left: 11px;
+  top: 10px;
+}
+
+.p-6 {
+  padding: 2.06rem 6rem 2.06rem 6rem !important;
+}
+
+.my-6 {
+  margin-top: 6rem;
+  margin-bottom: 6.25rem;
+}
+
+.px-6 {
+  padding-left: 6rem;
+  padding-right: 6.25rem;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.underlay {
+  z-index: -1;
+}
+
+.nav-item {
+  padding: 0 2rem 0 0;
+}
+
+.nav-item .li a {
+  color: #1F2937;
+  font-size: 16px;
+  font-family: SF-Pro-Display, sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  word-wrap: break-word;
+}
+
+.navbar .contact-btn {
+  color: #F9FAFB;
+  font-size: 16px;
+  background-color: #374151;
+  font-family: SF-Pro-Display, sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  word-wrap: break-word;
+  border-radius: 0.375rem;
+  padding: 0.75rem 1.5rem;
+  margin-right: 0.75rem;
+}
+
+.navbar .user-btn {
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  background-color: #F9FAFB;
+  border-color: #374151;
+}
+
+.navbar .active::after {
+  content: "";
+  border-bottom: 2px #1F2937 solid;
+  height: 100%;
+  width: 80%;
+  display: block;
+}
+
+.landing-text h1 {
+  color: #1F2937;
+  font-family: Playfair-Display, serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5rem;
+  letter-spacing: 0.08rem;
+}
+.landing-text h1 > span {
+  color: #6F1AB6;
+  font-family: Playfair-Display, serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5rem;
+  letter-spacing: 0.08rem;
+}
+.landing-text p {
+  color: #6D7280;
+  text-align: center;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.875rem;
+  letter-spacing: 0.025rem;
+}
+
+.landing-img {
+  background-image: url(img/Rectangle-1.png);
+  height: 34.8125rem;
+  flex-shrink: 0;
+}
+
+.landing-badge {
+  left: 9.75rem;
+  top: -3.5rem;
+  transform: rotate(15deg);
+}
+
+.landing-badge .text {
+  bottom: 78px;
+  left: 26px;
+  color: #FFF;
+  text-align: center;
+  font-family: Monotype-Corsiva, cursive;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.025rem;
+}
+
+.landing-img .carousel {
+  bottom: 2.75rem;
+  right: 0;
+  z-index: 10;
+}
+
+.landing-img .carousel-indicators {
+  border-radius: 0.125rem;
+  background: #160B24;
+  padding: 1.375rem 1.5rem;
+  align-items: flex-start;
+  margin: 0 !important;
+  top: -4px;
+}
+
+.landing-img .carousel-indicators [data-bs-target] {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.landing-img .carousel-indicators span {
+  margin-right: 3px !important;
+  margin-left: 3px !important;
+}
+
+.landing-img .carousel-control-next {
+  display: flex;
+  padding: 1rem 2rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 0.25rem;
+  background: rgba(227, 223, 223, 0.4);
+  backdrop-filter: blur(3px);
+  font-size: 1rem;
+  top: 0;
+}
+
+.landing-img .carousel-control-next-icon {
+  content: url(img/Polygon\ 1.svg);
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #FFF;
+}
+
+.landing-overlay {
+  opacity: 0.9;
+  background: #1F2937;
+  color: #FFF;
+  width: 100%;
+  bottom: 0;
+}
+.landing-overlay span {
+  color: #6D7280;
+  text-align: center;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+}
+.landing-overlay .landing-border {
+  border-right: 1px solid #6D7280;
+  padding-right: 4.5rem;
+  margin-right: 4.5rem;
+}
+.landing-overlay h5 {
+  color: #FFF;
+  text-align: center;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0.03rem;
+}
+.landing-overlay a {
+  color: #FFF;
+  text-align: center;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75rem;
+  letter-spacing: 0.025rem;
+  text-decoration: none;
+}
+.landing-overlay .landing-explore {
+  margin-left: 4.5rem;
+  align-self: end;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.calm-walk {
+  background: rgba(229, 231, 235, 0.5019607843);
+  padding-top: 8rem;
+}
+
+.calm-walk .overlay {
+  opacity: 0.5;
+  background: linear-gradient(98deg, #1F2937 -6.13%, rgba(31, 41, 55, 0) 101.09%);
+  width: 43.5%;
+  height: 100%;
+}
+
+.calm-walk .text {
+  margin-left: 6rem;
+  margin-right: 6.31rem;
+  margin-top: 5.88rem;
+}
+.calm-walk .text span {
+  color: #6D7280;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  /* 150% */
+  letter-spacing: 0.12rem;
+}
+.calm-walk .text h3 {
+  color: #1F2937;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.5rem;
+  /* 140% */
+  letter-spacing: 0.05rem;
+  margin-bottom: 2rem;
+}
+.calm-walk .text h3 span {
+  color: #6F1AB6;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 3.5rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 2rem;
+}
+.calm-walk .text p {
+  color: #6D7280;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.875rem;
+  /* 187.5% */
+  letter-spacing: 0.02rem;
+}
+.calm-walk .text a {
+  color: #6F1AB6;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-decoration: none;
+  border-bottom: 2px #6F1AB6 solid;
+}
+
+.products {
+  margin-top: 9.5rem;
+}
+.products a {
+  text-decoration: none;
+}
+.products .col-10 {
+  flex: 0 0 auto;
+  width: 86.333333% !important;
+}
+.products .range span {
+  color: #6D7280;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.12rem;
+}
+.products .range h3 {
+  color: #1F2937;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3rem;
+  /* 120% */
+  letter-spacing: 0.05rem;
+}
+.products .text p {
+  color: #6D7280;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.875rem;
+  /* 187.5% */
+  letter-spacing: 0.02rem;
+}
+.products .text a {
+  color: #6F1AB6;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.products .carousel-indicators [data-bs-target] {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.products .carousel-indicators button {
+  background-color: #E5E7EB;
+  width: 20.91619rem;
+}
+.products .carousel-indicators button.active {
+  background-color: #6F1AB6;
+}
+.products .badge {
+  z-index: 10;
+  right: -70px;
+  top: -50px;
+}
+.products .overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem 0rem 0rem 0rem;
+  background: linear-gradient(46deg, #1B1A21 23.45%, rgba(101, 80, 59, 0) 77.03%);
+  top: 0;
+}
+.products .info {
+  bottom: 2rem;
+  left: 2.5rem;
+}
+.products .p-badge {
+  color: #FFA963;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  /* 171.429% */
+  letter-spacing: 0.0175rem;
+  border-radius: 0.125rem;
+  background: rgba(255, 169, 99, 0.12);
+  padding: 0rem 0.5rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+.products h3 {
+  color: #FFF;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.5rem;
+  /* 116.667% */
+  letter-spacing: 0.06rem;
+}
+.products .more {
+  color: #6D7280;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  /* 150% */
+  letter-spacing: 0.02rem;
+}
+
+.pet {
+  margin-top: 9rem;
+}
+.pet img {
+  border-radius: 0.5rem;
+  background: radial-gradient(82.74% 82.74% at 50% 50%, rgba(255, 255, 255, 0) 46.92%, rgba(0, 0, 0, 0.4) 90.07%);
+  box-shadow: rgba(255, 255, 255, 0), rgb(0, 0, 0);
+}
+.pet .text h3 {
+  color: #1F2937;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.5rem;
+  letter-spacing: 0.05rem;
+  margin-top: 6.43rem;
+}
+.pet .text h3 span {
+  color: #6F1AB6;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.5rem;
+  letter-spacing: 0.05rem;
+}
+.pet .text p {
+  color: #6D7280;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.875rem;
+  margin: 2rem 5.2rem 2.75rem 0;
+  letter-spacing: 0.02rem;
+}
+.pet .text a {
+  color: #6F1AB6;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  /* 150% */
+}
+.pet .calm-wrapper {
+  overflow-x: hidden;
+  height: 15rem;
+}
+.pet .calm-wrapper .calm {
+  width: max-content;
+  margin-top: 7rem;
+}
+.pet h1 {
+  color: #FFF;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 16.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.5rem;
+  /* 14.925% */
+  letter-spacing: 0.335rem;
+  right: 66px;
+}
+
+.blog {
+  background: rgba(229, 231, 235, 0.5019607843);
+  text-align: center;
+}
+.blog span {
+  color: #6D7280;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  /* 150% */
+  letter-spacing: 0.12rem;
+}
+.blog h3 {
+  color: #1F2937;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3rem;
+  /* 120% */
+  letter-spacing: 0.05rem;
+}
+.blog h5 {
+  color: #6D7280;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.875rem;
+  /* 187.5% */
+  letter-spacing: 0.02rem;
+}
+.blog .card {
+  text-align: left;
+}
+.blog .card .card-body {
+  padding: 1.5rem 1.5rem !important;
+}
+.blog .card .card-body .card-title {
+  color: #6D7280;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 0.0175rem;
+  margin-bottom: 0.75rem !important;
+}
+.blog .card .card-body .card-text {
+  color: #1F2937;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75rem;
+  letter-spacing: 0.025rem;
+}
+.blog .card .card-body a {
+  color: #6F1AB6;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+footer {
+  background-image: url(img/footer.png);
+  color: #FFF;
+}
+footer .overlay {
+  background: linear-gradient(62deg, #1F2937 16.61%, rgba(31, 41, 55, 0.8) 106.76%);
+  padding: 6rem;
+}
+footer .logo img {
+  width: 9.8125rem;
+  height: 1.875rem;
+  flex-shrink: 0;
+}
+footer input {
+  background-color: inherit;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid #9CA3AF;
+  padding-bottom: 0.75rem;
+}
+footer input::placeholder {
+  color: #6D7280;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  /* 150% */
+  letter-spacing: 0.02rem;
+}
+footer .input-group button {
+  background: inherit;
+  border: 0;
+  position: absolute;
+  right: 0;
+}
+footer .cat {
+  color: #FFF;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75rem;
+  letter-spacing: 0.025rem;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 0 !important;
+  margin-top: 1.5rem;
+}
+footer li {
+  margin-bottom: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: #FFF;
+}
+footer .last {
+  background: #1F2937;
+}
+footer .last .text {
+  color: #6D7280;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+  align-self: center;
+}
+footer .last span {
+  color: #F44;
+  font-family: SF-Pro-Display, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+}
+footer .last li {
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

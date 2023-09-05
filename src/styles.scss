@@ -1,0 +1,721 @@
+@font-face {
+    font-family: 'SF-Pro-Display';
+    src: url('fonts/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+}
+
+@font-face {
+    font-family: 'Playfair-Display';
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+}
+
+@font-face {
+    font-family: 'Monotype-Corsiva';
+    src: url('fonts/MonotypeCorsiva.ttf') format('opentype');
+}
+
+// Fonts
+$font-family-sf: "SF-Pro-Display", sans-serif;
+$font-family-playfair: "Playfair-Display", serif;
+$font-family-monotype: "Monotype-Corsiva", cursive;
+
+// Colors
+$background-color: #FFF;
+$text-main-color: #1F2937;
+$text-secondary-color: #6D7280;
+$text-accent-color: #6F1AB6;
+
+// Body
+body {
+    background: linear-gradient(90deg, #F9F9F9 -1.47%, #{$background-color} 103.39%);
+    /* background-color: red; */
+}
+
+// Up
+
+.up {
+    bottom: 8rem;
+    left: 6rem;
+
+    .arrow {
+        left: 11px;
+        top: 10px;
+    }
+}
+
+// Spacing Classes
+.p-6 {
+    padding: 2.06rem 6rem 2.06rem 6rem !important;
+}
+
+.my-6 {
+    margin-top: 6rem;
+    margin-bottom: 6.25rem;
+}
+
+.px-6 {
+    padding-left: 6rem;
+    padding-right: 6.25rem;
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+// Underlay
+.underlay {
+    z-index: -1;
+}
+
+// Navbar
+.nav-item {
+    padding: 0 2rem 0 0;
+}
+
+.nav-item .li a {
+    color: #{$text-main-color};
+    font-size: 16px;
+    font-family: #{$font-family-sf};
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    word-wrap: break-word;
+}
+
+.navbar .contact-btn {
+    color: #F9FAFB;
+    font-size: 16px;
+    background-color: #374151;
+    font-family: #{$font-family-sf};
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    border-radius: 0.375rem;
+    padding: 0.75rem 1.5rem;
+    margin-right: 0.75rem;
+}
+
+.navbar .user-btn {
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    background-color: #F9FAFB;
+    border-color: #374151;
+}
+
+.navbar .active::after {
+    content: "";
+    border-bottom: 2px #{$text-main-color} solid;
+    height: 100%;
+    width: 80%;
+    display: block;
+}
+
+// Landing Text
+.landing-text {
+    h1 {
+        color: #{$text-main-color};
+        font-family: #{$font-family-playfair};
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 5rem;
+        letter-spacing: 0.08rem;
+    }
+
+    h1>span {
+        color: #{$text-accent-color};
+        font-family: #{$font-family-playfair};
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 5rem;
+        letter-spacing: 0.08rem;
+    }
+
+    p {
+        color: #{$text-secondary-color};
+        text-align: center;
+        font-family: #{$font-family-sf};
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.875rem;
+        letter-spacing: 0.025rem;
+    }
+}
+
+// Landing Image
+.landing-img {
+    background-image: url(img/Rectangle-1.png);
+    height: 34.8125rem;
+    flex-shrink: 0;
+}
+
+.landing-badge {
+    left: 9.75rem;
+    top: -3.5rem;
+    transform: rotate(15deg);
+}
+
+.landing-badge .text {
+    bottom: 78px;
+    left: 26px;
+    color: #{$background-color};
+    text-align: center;
+    font-family: #{$font-family-monotype};
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0.025rem;
+}
+
+.landing-img .carousel {
+    bottom: 2.75rem;
+    right: 0;
+    z-index: 10;
+}
+
+.landing-img .carousel-indicators {
+    border-radius: 0.125rem;
+    background: #160B24;
+    padding: 1.375rem 1.5rem;
+    align-items: flex-start;
+    margin: 0 !important;
+    top: -4px;
+}
+
+.landing-img .carousel-indicators [data-bs-target] {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.landing-img .carousel-indicators span {
+    margin-right: 3px !important;
+    margin-left: 3px !important;
+}
+
+.landing-img .carousel-control-next {
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 0.25rem;
+    background: rgba(227, 223, 223, 0.40);
+    backdrop-filter: blur(3px);
+    font-size: 1rem;
+    top: 0;
+}
+
+.landing-img .carousel-control-next-icon {
+    content: url(img/Polygon\ 1.svg);
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #{$background-color};
+}
+
+.landing-overlay {
+    opacity: 0.9;
+    background: #{$text-main-color};
+    color: #FFF;
+    width: 100%;
+    bottom: 0;
+
+    span {
+        color: #{$text-secondary-color};
+        text-align: center;
+        font-family: #{$font-family-sf};
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5rem;
+        letter-spacing: 0.02rem;
+    }
+
+    .landing-border {
+        border-right: 1px solid #{$text-secondary-color};
+        padding-right: 4.5rem;
+        margin-right: 4.5rem;
+    }
+
+    h5 {
+        color: #{$background-color};
+        text-align: center;
+        font-family: #{$font-family-sf};
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 2rem;
+        letter-spacing: 0.03rem;
+    }
+
+    a {
+        color: #{$background-color};
+        text-align: center;
+        font-family: #{$font-family-sf};
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.75rem;
+        letter-spacing: 0.025rem;
+        text-decoration: none;
+    }
+
+    .landing-explore {
+        margin-left: 4.5rem;
+        align-self: end;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #F3F4F6;
+    }
+}
+
+// Calm Walk
+.calm-walk {
+    background: #e5e7eb80;
+    padding-top: 8rem;
+}
+
+.calm-walk .overlay {
+    opacity: 0.5;
+    background: linear-gradient(98deg, #1F2937 -6.13%, rgba(31, 41, 55, 0.00) 101.09%);
+    width: 43.5%;
+    height: 100%;
+}
+
+.calm-walk .text {
+    margin-left: 6rem;
+    margin-right: 6.31rem;
+    margin-top: 5.88rem;
+
+    span {
+        color: #{$text-secondary-color};
+        font-family: #{$font-family-sf};
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem;
+        /* 150% */
+        letter-spacing: 0.12rem;
+    }
+
+    h3 {
+        color: #{$text-main-color};
+        font-family: #{$font-family-sf};
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 3.5rem;
+        /* 140% */
+        letter-spacing: 0.05rem;
+        margin-bottom: 2rem;
+
+        span {
+            color: #{$text-accent-color};
+            font-family: #{$font-family-sf};
+            font-size: 2.5rem;
+            font-style: italic;
+            font-weight: 600;
+            line-height: 3.5rem;
+            letter-spacing: 0.05rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    p {
+        color: #{$text-secondary-color};
+        font-family: #{$font-family-sf};
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.875rem;
+        /* 187.5% */
+        letter-spacing: 0.02rem;
+    }
+
+    a {
+        color: #{$text-accent-color};
+        font-family: #{$font-family-sf};
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem;
+        text-decoration: none;
+        border-bottom: 2px #{$text-accent-color} solid;
+    }
+}
+
+// Products
+.products {
+    margin-top: 9.5rem;
+
+    a {
+        text-decoration: none;
+    }
+
+    .col-10 {
+        flex: 0 0 auto;
+        width: 86.333333% !important;
+    }
+
+    .range span {
+        color: #{$text-secondary-color};
+        font-family: #{$font-family-sf};
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem;
+        letter-spacing: 0.12rem;
+    }
+
+    .range h3 {
+        color: #{$text-main-color};
+        font-family: #{$font-family-sf};
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 3rem;
+        /* 120% */
+        letter-spacing: 0.05rem;
+    }
+
+    .text p {
+        color: #{$text-secondary-color};
+        font-family: #{$font-family-sf};
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.875rem;
+        /* 187.5% */
+        letter-spacing: 0.02rem;
+    }
+
+    .text a {
+        color: #{$text-accent-color};
+        font-family: #{$font-family-sf};
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .carousel-indicators button {
+        background-color: #E5E7EB;
+        width: 20.91619rem;
+    }
+
+    .carousel-indicators button.active {
+        background-color: #{$text-accent-color};
+    }
+
+    .badge {
+        z-index: 10;
+        right: -70px;
+        top: -50px;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem 0rem 0rem 0rem;
+        background: linear-gradient(46deg, #1B1A21 23.45%, rgba(101, 80, 59, 0) 77.03%);
+        top: 0;
+    }
+
+    .info {
+        bottom: 2rem;
+        left: 2.5rem;
+    }
+
+    .p-badge {
+        color: #FFA963;
+        font-family: #{$font-family-sf};
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5rem;
+        /* 171.429% */
+        letter-spacing: 0.0175rem;
+        border-radius: 0.125rem;
+        background: rgba(255, 169, 99, 0.12);
+        padding: 0rem 0.5rem;
+        align-items: flex-start;
+        gap: 0.625rem;
+    }
+
+    h3 {
+        color: #{$background-color};
+        font-family: #{$font-family-sf};
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 3.5rem;
+        /* 116.667% */
+        letter-spacing: 0.06rem;
+    }
+
+    .more {
+        color: #{$text-secondary-color};
+        font-family: #{$font-family-sf};
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem;
+        /* 150% */
+        letter-spacing: 0.02rem;
+    }
+}
+
+// Pet Friendly
+.pet {
+    margin-top: 9rem;
+
+    img {
+        border-radius: 0.5rem;
+        background: radial-gradient(82.74% 82.74% at 50% 50%, rgba(255, 255, 255, 0.00) 46.92%, rgba(0, 0, 0, 0.40) 90.07%);
+        box-shadow: rgba(255, 255, 255, 0), rgba(0, 0, 0, 1);
+    }
+
+    .text h3 {
+        color: #{$text-main-color};
+        font-family: #{$font-family-sf};
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 3.5rem;
+        letter-spacing: 0.05rem;
+        margin-top: 6.43rem;
+
+        span {
+            color: #{$text-accent-color};
+            font-family: #{$font-family-sf};
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 3.5rem;
+            letter-spacing: 0.05rem;
+        }
+    }
+
+    .text p {
+        color: #{$text-secondary-color};
+        font-family: #{$font-family-sf};
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.875rem;
+        margin: 2rem 5.2rem 2.75rem 0;
+        letter-spacing: 0.02rem;
+    }
+
+    .text a {
+        color: #{$text-accent-color};
+        font-family: #{$font-family-sf};
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem;
+        /* 150% */
+    }
+
+    .calm-wrapper {
+        overflow-x: hidden;
+        height: 15rem;
+    }
+
+    .calm-wrapper .calm {
+        width: max-content;
+        margin-top: 7rem;
+    }
+
+    h1 {
+        color: #{$background-color};
+        font-family: #{$font-family-sf};
+        font-size: 16.75rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 2.5rem;
+        /* 14.925% */
+        letter-spacing: 0.335rem;
+        right: 66px;
+    }
+}
+
+// Blog
+.blog {
+    background: #e5e7eb80;
+    text-align: center;
+
+    span {
+        color: #{$text-secondary-color};
+        font-family: #{$font-family-sf};
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem;
+        /* 150% */
+        letter-spacing: 0.12rem;
+    }
+
+    h3 {
+        color: #{$text-main-color};
+        font-family: #{$font-family-sf};
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 3rem;
+        /* 120% */
+        letter-spacing: 0.05rem;
+    }
+
+    h5 {
+        color: #{$text-secondary-color};
+        font-family: #{$font-family-sf};
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.875rem;
+        /* 187.5% */
+        letter-spacing: 0.02rem;
+    }
+
+    .card {
+        text-align: left;
+
+        .card-body {
+            padding: 1.5rem 1.5rem !important;
+
+            .card-title {
+                color: #{$text-secondary-color};
+                font-family: #{$font-family-sf};
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 1.5rem;
+                letter-spacing: 0.0175rem;
+                margin-bottom: 0.75rem !important;
+            }
+
+            .card-text {
+                color: #{$text-main-color};
+                font-family: #{$font-family-sf};
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 1.75rem;
+                letter-spacing: 0.025rem;
+            }
+
+            a {
+                color: #{$text-accent-color};
+                font-family: #{$font-family-sf};
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
+
+// Footer
+footer {
+    background-image: url(img/footer.png);
+    color: #FFF;
+
+    .overlay {
+        background: linear-gradient(62deg, #1F2937 16.61%, rgba(31, 41, 55, 0.80) 106.76%);
+        padding: 6rem;
+    }
+
+    .logo img {
+        width: 9.8125rem;
+        height: 1.875rem;
+        flex-shrink: 0;
+    }
+
+    input {
+        background-color: inherit;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 1px solid #9CA3AF;
+        padding-bottom: 0.75rem;
+
+        &::placeholder {
+            color: #{$text-secondary-color};
+            font-family: #{$font-family-sf};
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.5rem;
+            /* 150% */
+            letter-spacing: 0.02rem;
+        }
+    }
+
+    .input-group button {
+        background: inherit;
+        border: 0;
+        position: absolute;
+        right: 0;
+    }
+
+    .cat {
+        color: #{$background-color};
+        font-family: #{$font-family-sf};
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.75rem;
+        letter-spacing: 0.025rem;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0 !important;
+        margin-top: 1.5rem;
+    }
+
+    li {
+        margin-bottom: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    .last {
+        background: #{$text-main-color};
+    }
+
+    .last .text {
+        color: #{$text-secondary-color};
+        font-family: #{$font-family-sf};
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem;
+        letter-spacing: 0.02rem;
+        align-self: center;
+    }
+
+    .last span {
+        color: #F44;
+        font-family: #{$font-family-sf};
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem;
+        letter-spacing: 0.02rem;
+    }
+
+    .last li {
+        display: inline-block;
+        margin-right: 0.75rem;
+    }
+}
