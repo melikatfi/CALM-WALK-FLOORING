@@ -21,6 +21,16 @@ body {
     padding-right: 6.25rem;
 }
 
+.up {
+    bottom: 8rem;
+    left: 6rem;
+}
+
+.up .arrow {
+    left: 11px;
+    top: 10px;
+}
+
 /* NAVBAR */
 .nav-item {
     padding: 0 2rem 0 0;
@@ -504,9 +514,109 @@ body {
 
 .blog .card a{
     color: var(--Main, #6F1AB6);
-font-family: SF Pro Display;
-font-size: 1rem;
-font-style: normal;
-font-weight: 600;
-line-height: 1.5rem; /* 150% */
+    font-family: SF-Pro-Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-image: url(img/footer.png);
+    color: #FFF;
+}
+
+footer .overlay {
+    background: linear-gradient(62deg, #1F2937 16.61%, rgba(31, 41, 55, 0.80) 106.76%);
+    padding: 6rem;
+}
+
+footer .logo img {
+    width: 9.8125rem;
+    height: 1.875rem;
+    flex-shrink: 0;
+}
+
+footer input {
+    background-color: inherit;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #9CA3AF;
+    padding-bottom: 0.75rem;
+}
+
+footer input::placeholder {
+    color: var(--400, #9CA3AF);
+    font-family: SF-Pro-Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    /* 150% */
+    letter-spacing: 0.02rem;
+}
+
+footer .input-group button {
+    background: inherit;
+    border: 0;
+    position: absolute;
+    right: 0;
+}
+
+footer .cat {
+    color: var(--Background, #FFF);
+    font-family: SF-Pro-Display;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
+    letter-spacing: 0.025rem;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0 !important;
+    margin-top: 1.5rem;
+}
+
+footer li {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer .last {
+    background: var(--700, #374151);
+}
+
+footer .last .text {
+    color: var(--200, #E5E7EB);
+    font-family: SF-Pro-Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+    align-self: center;
+}
+
+footer .last span {
+    color: #F44;
+    font-family: SF-Pro-Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+}
+
+footer .last li {
+    display: inline-block;
+    margin-right: 0.75rem;
 }
