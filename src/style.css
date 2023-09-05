@@ -419,13 +419,94 @@ body {
     margin-top: 7rem;
 }
 
-.pet h1{
+.pet h1 {
     color: var(--Background, #FFF);
+    font-family: SF Pro Display;
+    font-size: 16.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.5rem;
+    /* 14.925% */
+    letter-spacing: 0.335rem;
+    right: 66px;
+}
+
+/* BLOG */
+
+.blog {
+    background: #e5e7eb80;
+    text-align: center;
+
+}
+
+.blog span {
+    color: var(--400, #9CA3AF);
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    /* 150% */
+    letter-spacing: 0.12rem;
+}
+
+.blog h3 {
+    color: var(--700, #374151);
+    font-family: SF Pro Display;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+    /* 120% */
+    letter-spacing: 0.05rem;
+
+}
+
+.blog h5 {
+    color: var(--500, #6D7280);
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.875rem;
+    /* 187.5% */
+    letter-spacing: 0.02rem;
+}
+
+.blog .card{
+    text-align: left;
+}
+
+.blog .card-body {
+    padding: 1.5rem 1.5rem !important;
+}
+
+.blog .card-title {
+    color: var(--400, #9CA3AF);
+    font-family: SF Pro Display;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0.0175rem;
+    margin-bottom: 0.75rem !important;
+}
+
+.blog .card-text {
+    color: var(--700, #374151);
+    font-family: SF Pro Display;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
+    letter-spacing: 0.025rem;
+}
+
+.blog .card a{
+    color: var(--Main, #6F1AB6);
 font-family: SF Pro Display;
-font-size: 16.75rem;
+font-size: 1rem;
 font-style: normal;
 font-weight: 600;
-line-height: 2.5rem; /* 14.925% */
-letter-spacing: 0.335rem;
-right:66px;
+line-height: 1.5rem; /* 150% */
 }
