@@ -142,9 +142,9 @@ body {
     margin-left: 0 !important;
 }
 
-.landing-img .carousel-indicators span{
+.landing-img .carousel-indicators span {
     margin-right: 3px !important;
-    margin-left: 3px !important;   
+    margin-left: 3px !important;
 }
 
 .landing-img .carousel-control-next {
@@ -214,9 +214,82 @@ body {
     text-decoration: none;
 }
 
-.landing-overlay .landing-explore{
+.landing-overlay .landing-explore {
     margin-left: 4.5rem;
     align-self: end;
     padding-bottom: 8px;
     border-bottom: 1px solid #F3F4F6;
+}
+
+/* Calm Walk */
+.calm-walk {
+    background: #e5e7eb80;
+    padding-top: 8rem;
+}
+
+.calm-walk .text {
+    margin-left: 6rem;
+    margin-right: 6.31rem;
+    margin-top: 5.88rem;
+}
+
+.calm-walk span {
+    color: var(--400, #9CA3AF);
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    /* 150% */
+    letter-spacing: 0.12rem;
+}
+
+.calm-walk h3 {
+    color: var(--700, #374151);
+    font-family: SF Pro Display;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.5rem;
+    /* 140% */
+    letter-spacing: 0.05rem;
+    margin-bottom: 2rem;
+}
+
+.calm-walk h3>span {
+    color: var(--Main, #6F1AB6);
+    font-family: SF Pro Display;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 3.5rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 2rem;
+}
+
+.calm-walk p {
+    color: var(--500, #6D7280);
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.875rem;
+    /* 187.5% */
+    letter-spacing: 0.02rem;
+}
+
+.calm-walk a {
+    color: var(--Main, #6F1AB6);
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-decoration: none;
+    border-bottom: 2px #6F1AB6 solid;
+
+}
+
+.calm-walk a img{
+    fill: var(--Main, #6F1AB6);
 }
