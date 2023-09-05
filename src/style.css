@@ -11,6 +11,16 @@ body {
     padding: 2.06rem 6rem 2.06rem 6rem !important;
 }
 
+.my-6 {
+    margin-top: 6rem;
+    margin-bottom: 6.25rem;
+}
+
+.px-6 {
+    padding-left: 6rem;
+    padding-right: 6.25rem;
+}
+
 /* NAVBAR */
 .nav-item {
     padding: 0 2rem 0 0;
@@ -39,17 +49,174 @@ body {
     margin-right: 0.75rem;
 }
 
-.navbar .user-btn{
+.navbar .user-btn {
     padding: 0.75rem;
     border-radius: 0.375rem;
     background-color: #F9FAFB;
     border-color: #374151;
 }
 
-.navbar .active::after{
+.navbar .active::after {
     content: "";
     border-bottom: 2px #1F2937 solid;
     height: 100%;
     width: 80%;
     display: block;
+}
+
+/* LANDING TEXT */
+.landing-text h1 {
+    color: var(--800, #1F2937);
+    font-family: Playfair Display;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5rem;
+    letter-spacing: 0.08rem;
+}
+
+.landing-text h1>span {
+    color: var(--Main, #6F1AB6);
+    font-family: Playfair Display;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5rem;
+    letter-spacing: 0.08rem;
+}
+
+.landing-text p {
+    color: var(--500, #6D7280);
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.875rem;
+    letter-spacing: 0.025rem;
+}
+
+/* LANDING IMAGE */
+.landing-img {
+    background-image: url(img/Rectangle-1.png);
+    height: 34.8125rem;
+    flex-shrink: 0;
+}
+
+.landing-badge {
+    left: 9.75rem;
+    top: -3.5rem;
+    transform: rotate(15deg);
+}
+
+.landing-badge .text {
+    bottom: 78px;
+    left: 26px;
+    color: var(--Background, #FFF);
+    text-align: center;
+    font-family: Monotype Corsiva;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0.025rem;
+}
+
+.landing-img .carousel {
+    bottom: 2.75rem;
+    right: 0;
+    z-index: 10;
+}
+
+.landing-img .carousel-indicators {
+    border-radius: 0.125rem;
+    background: #160B24;
+    padding: 1.375rem 1.5rem;
+    align-items: flex-start;
+    margin: 0 !important;
+    top: -4px;
+}
+
+.landing-img .carousel-indicators [data-bs-target] {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.landing-img .carousel-indicators span{
+    margin-right: 3px !important;
+    margin-left: 3px !important;   
+}
+
+.landing-img .carousel-control-next {
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 0.25rem;
+    background: rgba(227, 223, 223, 0.40);
+    backdrop-filter: blur(3px);
+    font-size: 1rem;
+    top: 0;
+}
+
+.landing-img .carousel-control-next-icon {
+    content: url(img/Polygon\ 1.svg);
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #FFF;
+}
+
+.landing-overlay {
+    opacity: 0.9;
+    background: var(--800, #1F2937);
+    color: #FFF;
+    width: 100%;
+    bottom: 0;
+}
+
+.landing-overlay span {
+    color: var(--400, #9CA3AF);
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+}
+
+.landing-overlay .landing-border {
+    border-right: 1px solid #6D7280;
+    padding-right: 4.5rem;
+    margin-right: 4.5rem;
+}
+
+.landing-overlay h5 {
+    color: var(--200, #E5E7EB);
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 0.03rem;
+}
+
+.landing-overlay a {
+    color: var(--200, #E5E7EB);
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
+    letter-spacing: 0.025rem;
+    text-decoration: none;
+}
+
+.landing-overlay .landing-explore{
+    margin-left: 4.5rem;
+    align-self: end;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #F3F4F6;
 }
