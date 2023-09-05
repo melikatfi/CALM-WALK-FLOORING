@@ -7,6 +7,9 @@
   <title>CALM WALK FLOORING</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css"
+    integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,6 +17,21 @@
 </head>
 
 <body>
+  <div class="underlay position-absolute">
+    <svg xmlns="http://www.w3.org/2000/svg" width="722" height="1083" viewBox="0 0 722 1083" fill="none">
+      <path
+        d="M-412.132 813.792C-190.941 787.839 160.322 720.402 54.4601 319.542C-80.2565 -190.582 -625.448 -146.776 -330.985 -478.844M-337.292 831.559C-116.125 805.745 235.091 738.59 129.08 338.617C-5.82541 -170.376 -550.968 -126.866 -256.65 -458.062M-264.472 861.386C-43.2811 835.433 307.982 767.996 202.12 367.135C67.4035 -142.988 -477.788 -99.1819 -183.325 -431.251M-193.547 890.919C27.6203 865.105 378.836 797.95 272.826 397.977C137.92 -111.016 -407.222 -67.5063 -112.905 -398.703M-123.632 926.481C97.5351 900.667 448.751 833.512 342.741 433.539C207.835 -75.4538 -337.308 -31.9438 -42.9897 -363.14M-51.8204 962.338C169.37 936.384 520.633 868.948 414.771 468.087C280.055 -42.0362 -265.137 1.77 29.3267 -330.299M18.5993 994.885C239.767 969.071 590.983 901.916 484.972 501.944C350.066 -7.04974 -195.076 36.4602 99.2418 -294.736M89.0193 1027.43C310.21 1001.48 661.473 934.044 555.611 533.183C420.894 23.0598 -124.297 66.866 170.166 -265.203M162.345 1054.24C383.512 1028.43 734.728 961.275 628.718 561.303C493.812 52.3096 -51.3305 95.8196 242.987 -235.377M235.079 1080.97C455.59 1055.05 805.777 987.735 700.29 587.844C566.051 78.9535 22.5366 122.715 316.131 -208.593"
+        stroke="url(#paint0_linear_80_1980)" stroke-width="4" />
+      <defs>
+        <linearGradient id="paint0_linear_80_1980" x1="151.316" y1="-478.844" x2="134" y2="1154.5"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="white" />
+          <stop offset="1" stop-color="white" stop-opacity="0.1" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
   <nav class="navbar navbar-expand-lg navbar-light p-6">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -81,7 +99,7 @@
     <div class="landing-badge position-absolute">
       <div class="position-absolute">
         <svg xmlns="http://www.w3.org/2000/svg" width="115" height="115" viewBox="0 0 115 115" fill="none">
-          <circle cx="57.5" cy="57.5" r="54" fill="#6F1AB6" stroke="white" stroke-width="7"/>
+          <circle cx="57.5" cy="57.5" r="54" fill="#6F1AB6" stroke="white" stroke-width="7" />
         </svg>
         <span class="position-relative text">Special Products</span>
       </div>
@@ -105,8 +123,8 @@
         </div>
       </div>
       <div>
-        <button class="carousel-control-next position-static position-relative" type="button" data-bs-target="#landing-carousel"
-          data-bs-slide="next">
+        <button class="carousel-control-next position-static position-relative" type="button"
+          data-bs-target="#landing-carousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -141,13 +159,16 @@
   </section>
 
   <section class="calm-walk d-flex">
-    <div class="img">
+    <div class="img position-relative">
+      <div class="overlay position-absolute">&nbsp;</div>
       <img src="src/img/calmwalk.png" alt="">
     </div>
     <div class="text">
       <span class="mb-3">TOP NOTCH AUSTRALIA’S FLOORING BRAND</span>
       <h3>Enhance your interior Just with <span>CalmWalk</span></h3>
-      <p>“We are a distinguished provider in the industry of high-quality exceptional tiles. Knowing the expectation of the customers and understanding their personalities, we have succeeded in providing striking varieties of tiles that look astonishing in every way.</p>
+      <p>“We are a distinguished provider in the industry of high-quality exceptional tiles. Knowing the expectation of
+        the customers and understanding their personalities, we have succeeded in providing striking varieties of tiles
+        that look astonishing in every way.</p>
       <div>
         <a href="#" class="pb-1">
           Learn more
@@ -158,7 +179,7 @@
   </section>
 
   <section class="products">
-    <div class="d-flex px-6 justify-content-between mb-5">
+    <div class="d-flex px-6 justify-content-between mb-5 pb-2">
       <div class="range col-4">
         <span>OUR RANGE</span>
         <h3>Explore our products</h3>
@@ -174,69 +195,294 @@
         </a>
       </div>
     </div>
-    <div class="col-10 mx-auto position-relative">
-      <div class="position-absolute">
+    <div class="col-10 mx-auto position-relative mt-4">
+      <div class="position-absolute badge">
         <img src="src/img/badge.svg" alt="">
       </div>
       <div id="products-carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner mb-5">
           <div class="carousel-item active">
             <div class="d-flex">
-              <img src="src/img/Parquet.png" alt="">
-              <img src="src/img/Parquet2.png" alt="">
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <span class="p-badge">Popular</span>
+                      <h3>Lavender Grey</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet.png" alt="">
+                </a>
+              </div>
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <h3>Hazelnut</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet4.png" alt="">
+                </a>
+              </div>
             </div>
             <div class="d-flex">
-              <img src="src/img/Parquet3.png" alt="">
-              <img src="src/img/Parquet4.png" alt="">
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <span class="p-badge">Popular</span>
+                      <h3>Light Goldenrod</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet2.png" alt="">
+                </a>
+              </div>
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <span class="p-badge">Top Selling</span>
+                      <h3>Kobicha</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet3.png" alt="">
+                </a>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="d-flex">
-              <img src="src/img/Parquet.png" alt="">
-              <img src="src/img/Parquet2.png" alt="">
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <span class="p-badge">Popular</span>
+                      <h3>Lavender Grey</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet.png" alt="">
+                </a>
+              </div>
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <h3>Hazelnut</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet4.png" alt="">
+                </a>
+              </div>
             </div>
             <div class="d-flex">
-              <img src="src/img/Parquet3.png" alt="">
-              <img src="src/img/Parquet4.png" alt="">
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <span class="p-badge">Popular</span>
+                      <h3>Light Goldenrod</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet2.png" alt="">
+                </a>
+              </div>
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <span class="p-badge">Top Selling</span>
+                      <h3>Kobicha</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet3.png" alt="">
+                </a>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="d-flex">
-              <img src="src/img/Parquet.png" alt="">
-              <img src="src/img/Parquet2.png" alt="">
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <span class="p-badge">Popular</span>
+                      <h3>Lavender Grey</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet.png" alt="">
+                </a>
+              </div>
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <h3>Hazelnut</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet4.png" alt="">
+                </a>
+              </div>
             </div>
             <div class="d-flex">
-              <img src="src/img/Parquet3.png" alt="">
-              <img src="src/img/Parquet4.png" alt="">
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <span class="p-badge">Popular</span>
+                      <h3>Light Goldenrod</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet2.png" alt="">
+                </a>
+              </div>
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <span class="p-badge">Top Selling</span>
+                      <h3>Kobicha</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet3.png" alt="">
+                </a>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="d-flex">
-              <img src="src/img/Parquet.png" alt="">
-              <img src="src/img/Parquet2.png" alt="">
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <span class="p-badge">Popular</span>
+                      <h3>Lavender Grey</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet.png" alt="">
+                </a>
+              </div>
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <h3>Hazelnut</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet4.png" alt="">
+                </a>
+              </div>
             </div>
             <div class="d-flex">
-              <img src="src/img/Parquet3.png" alt="">
-              <img src="src/img/Parquet4.png" alt="">
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <span class="p-badge">Popular</span>
+                      <h3>Light Goldenrod</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet2.png" alt="">
+                </a>
+              </div>
+              <div class="col-6 position-relative">
+                <a href="#">
+                  <div class="overlay position-absolute">
+                    <div class="position-absolute info">
+                      <span class="p-badge">Top Selling</span>
+                      <h3>Kobicha</h3>
+                      <a href="#" class="pt-2 more">
+                        More Details
+                        <img src="src/img/Arrow 1.svg" alt="" class="ms-2">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="src/img/Parquet3.png" alt="">
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="mt-5 position-relative d-flex">
-          <div class="carousel-indicators position-absolute">
-            <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          </div>
-          <div>
-            <button class="carousel-control-prev position-absolute bg-danger" type="button" data-bs-target="#products-carousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next position-absolute bg-danger" type="button" data-bs-target="#products-carousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+        <div class="mt-5">
+          <div class="position-relative d-flex">
+            <div class="carousel-indicators position-absolute">
+              <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div>
+              <button class="carousel-control-prev position-absolute bg-danger" type="button"
+                data-bs-target="#products-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next position-absolute bg-danger" type="button"
+                data-bs-target="#products-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -274,8 +520,9 @@
   <section class="blog px-6 pt-5 pb-5">
     <div class="mt-4">
       <span>KNOW MORE ABOUT FLOORING</span>
-    <h3 class="mb-4 mt-3">Blog & News</h3>
-    <h5 class="mb-4 col-5 mx-auto">Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h5>
+      <h3 class="mb-4 mt-3">Blog & News</h3>
+      <h5 class="mb-4 col-5 mx-auto">Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
+        velit interdum, ac aliquet odio mattis.</h5>
     </div>
     <div class="d-flex mt-5 mb-5 pb-3">
       <div class="card me-4">
@@ -315,8 +562,8 @@
               <img src="src/img/Arrow 1.svg" alt="">
             </a>
           </div>
+        </div>
       </div>
-    </div>
   </section>
 
   <footer class="position-relative">
@@ -407,12 +654,14 @@
       </div>
     </div>
     <div class="up position-absolute">
-      <div class="position-relative">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
-          <circle cx="23" cy="23" r="23" transform="rotate(-90 23 23)" fill="#6F1AB6" />
-        </svg>
-        <img src="src/img/vuesax/linear/arrow-right.svg" class="position-absolute arrow"/>
-      </div>
+      <a href="#">
+        <div class="position-relative">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+            <circle cx="23" cy="23" r="23" transform="rotate(-90 23 23)" fill="#6F1AB6" />
+          </svg>
+          <img src="src/img/vuesax/linear/arrow-right.svg" class="position-absolute arrow" />
+        </div>
+      </a>
     </div>
     <div class="d-flex last px-6 justify-content-between">
       <div class="text">

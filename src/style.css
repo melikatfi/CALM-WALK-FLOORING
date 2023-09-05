@@ -1,10 +1,15 @@
 @font-face {
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     src: url(sf-pro-display/SFPRODISPLAYMEDIUM.OTF);
 }
 
 body {
     background: linear-gradient(90deg, #F9F9F9 -1.47%, #FFF 103.39%);
+    /* background-color: red; */
+}
+
+.underlay {
+    z-index: -1;
 }
 
 .p-6 {
@@ -39,7 +44,7 @@ body {
 .nav-item .li a {
     color: #1F2937;
     font-size: 16px;
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
@@ -50,7 +55,7 @@ body {
     color: #F9FAFB;
     font-size: 16px;
     background-color: #374151;
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-weight: 500;
     line-height: 24px;
     word-wrap: break-word;
@@ -75,6 +80,7 @@ body {
 }
 
 /* LANDING TEXT */
+
 .landing-text h1 {
     color: var(--800, #1F2937);
     font-family: Playfair Display;
@@ -98,7 +104,7 @@ body {
 .landing-text p {
     color: var(--500, #6D7280);
     text-align: center;
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
@@ -187,7 +193,7 @@ body {
 .landing-overlay span {
     color: var(--400, #9CA3AF);
     text-align: center;
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1rem;
     font-style: normal;
     font-weight: 600;
@@ -204,7 +210,7 @@ body {
 .landing-overlay h5 {
     color: var(--200, #E5E7EB);
     text-align: center;
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
@@ -215,7 +221,7 @@ body {
 .landing-overlay a {
     color: var(--200, #E5E7EB);
     text-align: center;
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
@@ -237,6 +243,13 @@ body {
     padding-top: 8rem;
 }
 
+.calm-walk .overlay {
+    opacity: 0.5;
+    background: linear-gradient(98deg, #1F2937 -6.13%, rgba(31, 41, 55, 0.00) 101.09%);
+    width: 43.5%;
+    height: 100%;
+}
+
 .calm-walk .text {
     margin-left: 6rem;
     margin-right: 6.31rem;
@@ -245,7 +258,7 @@ body {
 
 .calm-walk span {
     color: var(--400, #9CA3AF);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -256,7 +269,7 @@ body {
 
 .calm-walk h3 {
     color: var(--700, #374151);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
@@ -268,7 +281,7 @@ body {
 
 .calm-walk h3>span {
     color: var(--Main, #6F1AB6);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 2.5rem;
     font-style: italic;
     font-weight: 600;
@@ -279,7 +292,7 @@ body {
 
 .calm-walk p {
     color: var(--500, #6D7280);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -290,7 +303,7 @@ body {
 
 .calm-walk a {
     color: var(--Main, #6F1AB6);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -300,21 +313,27 @@ body {
 
 }
 
-.calm-walk a img{
+.calm-walk a img {
     fill: var(--Main, #6F1AB6);
+}
+
 /* PRODUCTS */
 .products {
     margin-top: 9.5rem;
 }
 
-.products .col-10{
+.products a {
+    text-decoration: none;
+}
+
+.products .col-10 {
     flex: 0 0 auto;
     width: 86.333333% !important;
 }
 
 .products .range span {
     color: var(--400, #9CA3AF);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -324,7 +343,7 @@ body {
 
 .products .range h3 {
     color: var(--700, #374151);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
@@ -335,7 +354,7 @@ body {
 
 .products .text p {
     color: var(--500, #6D7280);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -346,7 +365,7 @@ body {
 
 .products .text a {
     color: var(--Main, #6F1AB6);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -357,17 +376,76 @@ body {
     margin-right: 0 !important;
     margin-left: 0 !important;
 }
-.products .carousel-indicators button{
+
+.products .carousel-indicators button {
     background-color: #E5E7EB;
     width: 20.91619rem;
 }
-.products .carousel-indicators button.active{
+
+.products .carousel-indicators button.active {
     background-color: #6F1AB6;
+}
+
+.products .badge {
+    z-index: 10;
+    right: -70px;
+    top: -50px;
+}
+
+.products .overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem 0rem 0rem 0rem;
+    background: linear-gradient(46deg, #1B1A21 23.45%, rgba(101, 80, 59, 0) 77.03%);
+    top: 0;
+}
+
+.products .info {
+    bottom: 2rem;
+    left: 2.5rem;
+}
+
+.products .p-badge {
+    color: #FFA963;
+    font-family: SF-Pro-Display;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    /* 171.429% */
+    letter-spacing: 0.0175rem;
+    border-radius: 0.125rem;
+    background: rgba(255, 169, 99, 0.12);
+    padding: 0rem 0.5rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+}
+
+.products h3 {
+    color: var(--Background, #FFF);
+    font-family: SF-Pro-Display;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.5rem;
+    /* 116.667% */
+    letter-spacing: 0.06rem;
+}
+
+.products .more {
+    color: var(--300, #D2D5DA);
+    font-family: SF-Pro-Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    /* 150% */
+    letter-spacing: 0.02rem;
 }
 
 /* PET FRIENDLY */
 
-.pet{
+.pet {
     margin-top: 9rem;
 }
 
@@ -379,7 +457,7 @@ body {
 
 .pet .text h3 {
     color: var(--700, #374151);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
@@ -390,7 +468,7 @@ body {
 
 .pet .text span {
     color: var(--Main, #6F1AB6);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
@@ -400,7 +478,7 @@ body {
 
 .pet .text p {
     color: var(--500, #6D7280);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -411,7 +489,7 @@ body {
 
 .pet .text a {
     color: var(--Main, #6F1AB6);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -419,19 +497,19 @@ body {
     /* 150% */
 }
 
-.pet .calm-wrapper{
+.pet .calm-wrapper {
     overflow-x: hidden;
     height: 15rem;
 }
 
-.pet .calm-wrapper .calm{
+.pet .calm-wrapper .calm {
     width: max-content;
     margin-top: 7rem;
 }
 
 .pet h1 {
     color: var(--Background, #FFF);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 16.75rem;
     font-style: normal;
     font-weight: 600;
@@ -451,7 +529,7 @@ body {
 
 .blog span {
     color: var(--400, #9CA3AF);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -462,7 +540,7 @@ body {
 
 .blog h3 {
     color: var(--700, #374151);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
@@ -474,7 +552,7 @@ body {
 
 .blog h5 {
     color: var(--500, #6D7280);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -483,7 +561,7 @@ body {
     letter-spacing: 0.02rem;
 }
 
-.blog .card{
+.blog .card {
     text-align: left;
 }
 
@@ -493,7 +571,7 @@ body {
 
 .blog .card-title {
     color: var(--400, #9CA3AF);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 600;
@@ -504,7 +582,7 @@ body {
 
 .blog .card-text {
     color: var(--700, #374151);
-    font-family: SF Pro Display;
+    font-family: SF-Pro-Display;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
@@ -512,7 +590,7 @@ body {
     letter-spacing: 0.025rem;
 }
 
-.blog .card a{
+.blog .card a {
     color: var(--Main, #6F1AB6);
     font-family: SF-Pro-Display;
     font-size: 1rem;
