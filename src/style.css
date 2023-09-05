@@ -292,4 +292,65 @@ body {
 
 .calm-walk a img{
     fill: var(--Main, #6F1AB6);
+/* PRODUCTS */
+.products {
+    margin-top: 9.5rem;
+}
+
+.products .col-10{
+    flex: 0 0 auto;
+    width: 86.333333% !important;
+}
+
+.products .range span {
+    color: var(--400, #9CA3AF);
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.12rem;
+}
+
+.products .range h3 {
+    color: var(--700, #374151);
+    font-family: SF Pro Display;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+    /* 120% */
+    letter-spacing: 0.05rem;
+}
+
+.products .text p {
+    color: var(--500, #6D7280);
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.875rem;
+    /* 187.5% */
+    letter-spacing: 0.02rem;
+}
+
+.products .text a {
+    color: var(--Main, #6F1AB6);
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.products .carousel-indicators [data-bs-target] {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+.products .carousel-indicators button{
+    background-color: #E5E7EB;
+    width: 20.91619rem;
+}
+.products .carousel-indicators button.active{
+    background-color: #6F1AB6;
 }
