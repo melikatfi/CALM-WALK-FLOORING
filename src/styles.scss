@@ -24,10 +24,19 @@ $text-main-color: #1F2937;
 $text-secondary-color: #6D7280;
 $text-accent-color: #6F1AB6;
 
+//costume
+.border-bottom {
+    border-bottom: 1px solid $text-accent-color !important;
+}
+
 // Body
 body {
     background: linear-gradient(90deg, #F9F9F9 -1.47%, #{$background-color} 103.39%);
     /* background-color: red; */
+}
+
+a{
+    text-decoration: none !important;
 }
 
 // Up
@@ -59,6 +68,10 @@ body {
 
 .mt-6 {
     margin-top: 6rem;
+}
+
+.w-fit{
+    width: fit-content;
 }
 
 // Underlay
@@ -109,6 +122,17 @@ body {
     display: block;
 }
 
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0 !important;
+    vertical-align: -0.25rem;
+    content: url(img/arrow-down.svg) !important;
+    border-top: 0 !important;
+    border-right: none !important;
+    border-bottom: 0;
+    border-left: none !important;
+}
+
 // Landing Text
 .landing-text {
     h1 {
@@ -147,7 +171,8 @@ body {
 .landing-img {
     background-image: url(img/Rectangle-1.png);
     height: 34.8125rem;
-    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .landing-badge {
@@ -170,9 +195,13 @@ body {
 }
 
 .landing-img .carousel {
-    bottom: 2.75rem;
+    top: 22.12rem;
     right: 0;
     z-index: 10;
+}
+
+.landing-img .carousel-inner{
+    box-shadow: 1px 2rem 32px 7px rgb(0 0 0 / 50%);
 }
 
 .landing-img .carousel-indicators {
@@ -384,8 +413,8 @@ body {
         font-style: normal;
         font-weight: 500;
         line-height: 1.875rem;
-        /* 187.5% */
         letter-spacing: 0.02rem;
+        margin-bottom: 0.5rem !important;
     }
 
     .text a {
@@ -395,6 +424,15 @@ body {
         font-style: normal;
         font-weight: 500;
         line-height: 1.5rem;
+    }
+
+    .carousel-inner{
+        margin-bottom: 4.5rem;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        width: auto !important;
+        opacity: 100% !important;
     }
 
     .carousel-indicators [data-bs-target] {
