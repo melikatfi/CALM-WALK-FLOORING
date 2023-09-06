@@ -35,6 +35,21 @@ a {
 .p-6 {
   padding: 2.06rem 6rem 2.06rem 6rem !important;
 }
+@media screen and (max-width: 1221px) {
+  .p-6 {
+    padding: 2.06rem 3rem 2.06rem 3rem !important;
+  }
+}
+@media screen and (max-width: 1126px) {
+  .p-6 {
+    padding: 2.06rem 2rem 2.06rem 2rem !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .p-6 {
+    padding: 2.06rem 1rem 2.06rem 1rem !important;
+  }
+}
 
 .my-6 {
   margin-top: 6rem;
@@ -58,8 +73,33 @@ a {
   z-index: -1;
 }
 
+.nav-link {
+  color: #6D7280 !important;
+  font-family: "SF-Pro-Display", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.nav-link.active {
+  color: #1F2937 !important;
+}
+@media screen and (max-width: 1126px) {
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
 .nav-item {
   padding: 0 2rem 0 0;
+}
+@media screen and (max-width: 1341px) {
+  .nav-item {
+    padding: 0 0.75rem 0 0;
+  }
 }
 
 .nav-item .li a {
@@ -90,6 +130,11 @@ a {
   border-radius: 0.375rem;
   background-color: #F9FAFB;
   border-color: #374151;
+}
+@media screen and (max-width: 991px) {
+  .navbar .user-btn {
+    display: none;
+  }
 }
 
 .navbar .active::after {
@@ -386,6 +431,9 @@ a {
 .products .carousel-control-next, .products .carousel-control-prev {
   width: auto !important;
   opacity: 100% !important;
+}
+.products .carousel-control-next, .products .carousel-control-prev svg {
+  fill: #6F1AB6;
 }
 .products .carousel-indicators [data-bs-target] {
   margin-right: 0 !important;

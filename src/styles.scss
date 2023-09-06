@@ -54,6 +54,18 @@ a{
 // Spacing Classes
 .p-6 {
     padding: 2.06rem 6rem 2.06rem 6rem !important;
+
+    @media screen and (max-width: 1221px) {
+        padding: 2.06rem 3rem 2.06rem 3rem !important;
+    }
+
+    @media screen and (max-width: 1126px) {
+        padding: 2.06rem 2rem 2.06rem 2rem !important;
+    }
+
+    @media screen and (max-width: 991px) {
+        padding: 2.06rem 1rem 2.06rem 1rem !important;
+    }
 }
 
 .my-6 {
@@ -80,8 +92,32 @@ a{
 }
 
 // Navbar
+.nav-link {
+    color: $text-secondary-color !important;
+    font-family: $font-family-sf;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+
+    &.active {
+        color: $text-main-color !important;
+    }
+
+    @media screen and (max-width: 1126px) {
+        font-size: 0.9rem;
+    }
+}
+
 .nav-item {
     padding: 0 2rem 0 0;
+
+    @media screen and (max-width: 1341px) {
+        padding: 0 0.75rem 0 0;
+    }
 }
 
 .nav-item .li a {
@@ -112,6 +148,10 @@ a{
     border-radius: 0.375rem;
     background-color: #F9FAFB;
     border-color: #374151;
+
+    @media screen and (max-width: 991px) {
+        display: none;
+    }
 }
 
 .navbar .active::after {
@@ -433,6 +473,10 @@ a{
     .carousel-control-next, .carousel-control-prev{
         width: auto !important;
         opacity: 100% !important;
+    }
+
+    .carousel-control-next, .carousel-control-prev svg{
+        fill: $text-accent-color;
     }
 
     .carousel-indicators [data-bs-target] {

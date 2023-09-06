@@ -33,16 +33,12 @@
   </div>
 
   <nav class="navbar navbar-expand-lg navbar-light p-6">
-    <div class="container-fluid">
+    <div class="container-fluid p-lg-0">
       <a class="navbar-brand" href="#">
         <img src="src/img/logo.png" alt=logo"">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0 col-10 justify-content-center">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 col-10 justify-content-center">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
@@ -73,6 +69,10 @@
       </div>
       <div class="d-flex">
         <button class="contact-btn">Contact</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <button class="user-btn">
           <span>
             <i class="pe-1">
@@ -486,7 +486,6 @@
             <div class="col-2 text-end">
               <button class="carousel-control-prev position-static d-inline" type="button"
                 data-bs-target="#products-carousel" data-bs-slide="prev">
-                <!-- <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span> -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="12" viewBox="0 0 25 12" fill="#D2D5DA" style="transform: rotate(180deg);">
                   <path id="Arrow 1" d="M24.5303 6.53033C24.8232 6.23743 24.8232 5.76256 24.5303 5.46967L19.7574 0.696697C19.4645 0.403804 18.9896 0.403804 18.6967 0.696698C18.4038 0.989591 18.4038 1.46446 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM6.55671e-08 6.75L24 6.75L24 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z" fill="#6F1AB6"></path>
                 </svg>
